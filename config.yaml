@@ -1,0 +1,18 @@
+#输入的视频文件列表
+input: D:\\git\\ai_generate_subtitle\\video_file_list.txt
+#中间过程会生成的音频文件列表
+output: D:\git\ai_generate_subtitle\test.mp3
+#生成的原始字幕文件列表
+srt_path: D:\git\ai_generate_subtitle\test--whisper.srt
+#生成的翻译后的字幕文件列表
+srt_translate_path: D:\git\ai_generate_subtitle\test--whisper-zh.srt
+#翻译时开启多少线程
+translate_threads: 10
+#翻译源语言
+from: en
+#翻译目标语言
+to: zh
+#huggingface model地址，例如 D:\download\pytorch_model.bin；若为空，默认采用whisper-large-v3-turbo模型
+hf_model_path: ""
+#devive: cuda, cpu
+device: cuda
