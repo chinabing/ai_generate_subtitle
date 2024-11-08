@@ -1,0 +1,4 @@
+translate
+pyyaml
+openai-whisper
+ffmpeg-python
